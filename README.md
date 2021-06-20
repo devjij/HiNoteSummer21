@@ -1,5 +1,5 @@
 # HiNoteSummer21
-Hi-Note Music Review App Project
+Hi-Note Music Review App Project:
 Dev Jijilal, Sam Elmore
 
 
