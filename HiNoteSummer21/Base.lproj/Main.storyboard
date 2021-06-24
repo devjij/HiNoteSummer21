@@ -130,7 +130,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6q-7V-j6p">
                                         <rect key="frame" x="0.0" y="412" width="334" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="enterTapped:" destination="AvW-dg-Yj5" eventType="touchUpInside" id="ufp-nf-cZs"/>
                                         </connections>
@@ -169,27 +169,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1p-hH-sp3">
-                                <rect key="frame" x="186" y="255" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-pf-9Oh">
-                                <rect key="frame" x="184" y="129" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-pf-9Oh">
+                                <rect key="frame" x="94.5" y="128" width="225" height="48"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="View Last Review"/>
                                 <connections>
                                     <action selector="showReview:" destination="ob9-Kf-i0J" eventType="touchUpInside" id="EDL-ho-MsK"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-Jo-weh">
+                                <rect key="frame" x="180" y="276" width="54.5" height="142.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1p-hH-sp3">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HD-XS-zjt">
+                                        <rect key="frame" x="0.0" y="30.5" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDx-qa-ol7">
+                                        <rect key="frame" x="0.0" y="61" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4Q-w8-UkB">
+                                        <rect key="frame" x="0.0" y="91.5" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8o-ua-Zzo">
+                                        <rect key="frame" x="0.0" y="122" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5T-uq-34j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p3C-pf-9Oh" firstAttribute="top" secondItem="P5T-uq-34j" secondAttribute="top" constant="40" id="aKr-Hb-i6T"/>
+                            <constraint firstItem="pGi-Jo-weh" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="cP3-AW-Llc"/>
+                            <constraint firstItem="p3C-pf-9Oh" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="dMx-ky-ZGB"/>
+                            <constraint firstItem="pGi-Jo-weh" firstAttribute="top" secondItem="p3C-pf-9Oh" secondAttribute="bottom" constant="100" id="pde-9b-iBP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GhW-zI-hZP"/>
                     <connections>
+                        <outlet property="albumView" destination="BDx-qa-ol7" id="910-ZJ-8EW"/>
+                        <outlet property="artistView" destination="4HD-XS-zjt" id="Jp4-em-Gem"/>
+                        <outlet property="ratingView" destination="y8o-ua-Zzo" id="zOY-2S-h8C"/>
+                        <outlet property="reviewView" destination="a4Q-w8-UkB" id="dP5-lF-GIC"/>
                         <outlet property="songNameView" destination="F1p-hH-sp3" id="ZSy-mp-wwm"/>
                     </connections>
                 </viewController>
