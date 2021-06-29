@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2pU-Bo-AN4">
-                                <rect key="frame" x="40" y="227" width="334" height="442"/>
+                                <rect key="frame" x="40" y="204" width="334" height="488"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWs-aM-b4c">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
@@ -123,13 +123,31 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HpQ-PN-ls8">
+                                        <rect key="frame" x="0.0" y="363" width="334" height="32"/>
+                                        <segments>
+                                            <segment title="1"/>
+                                            <segment title="2"/>
+                                            <segment title="3"/>
+                                            <segment title="4"/>
+                                            <segment title="5"/>
+                                            <segment title="6"/>
+                                            <segment title="7"/>
+                                            <segment title="8"/>
+                                            <segment title="9"/>
+                                            <segment title="10"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="didChangeSegmentWithSender:" destination="AvW-dg-Yj5" eventType="valueChanged" id="i7Y-fP-Xpo"/>
+                                        </connections>
+                                    </segmentedControl>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rating" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8T-N1-cri">
-                                        <rect key="frame" x="0.0" y="363" width="334" height="34"/>
+                                        <rect key="frame" x="0.0" y="409" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6q-7V-j6p">
-                                        <rect key="frame" x="0.0" y="412" width="334" height="30"/>
+                                        <rect key="frame" x="0.0" y="458" width="334" height="30"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="enterTapped:" destination="AvW-dg-Yj5" eventType="touchUpInside" id="ufp-nf-cZs"/>
@@ -169,17 +187,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3C-pf-9Oh">
-                                <rect key="frame" x="94.5" y="128" width="225" height="48"/>
-                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="View Last Review"/>
-                                <connections>
-                                    <action selector="showReview:" destination="ob9-Kf-i0J" eventType="touchUpInside" id="EDL-ho-MsK"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-Jo-weh">
-                                <rect key="frame" x="180" y="276" width="54.5" height="142.5"/>
+                                <rect key="frame" x="180" y="288" width="54.5" height="142.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1p-hH-sp3">
                                         <rect key="frame" x="0.0" y="0.0" width="54.5" height="20.5"/>
@@ -213,14 +222,45 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2U1-4W-roj">
+                                <rect key="frame" x="39.5" y="158" width="335" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GRd-LL-Agp"/>
+                                    <constraint firstAttribute="width" constant="335" placeholder="YES" id="Z1o-bQ-hNU"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                    <segment title="10"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangeSegment2WithSender:" destination="ob9-Kf-i0J" eventType="valueChanged" id="MFd-rn-t0B"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h3-vN-RFy">
+                                <rect key="frame" x="161.5" y="228" width="91" height="30"/>
+                                <state key="normal" title="Show Review"/>
+                                <connections>
+                                    <action selector="showReview:" destination="ob9-Kf-i0J" eventType="touchUpInside" id="p6B-FS-xFB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5T-uq-34j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="p3C-pf-9Oh" firstAttribute="top" secondItem="P5T-uq-34j" secondAttribute="top" constant="40" id="aKr-Hb-i6T"/>
+                            <constraint firstItem="8h3-vN-RFy" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="QxN-Fz-hio"/>
+                            <constraint firstItem="pGi-Jo-weh" firstAttribute="top" secondItem="2U1-4W-roj" secondAttribute="bottom" constant="90" id="b9r-u7-QvD"/>
                             <constraint firstItem="pGi-Jo-weh" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="cP3-AW-Llc"/>
-                            <constraint firstItem="p3C-pf-9Oh" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="dMx-ky-ZGB"/>
-                            <constraint firstItem="pGi-Jo-weh" firstAttribute="top" secondItem="p3C-pf-9Oh" secondAttribute="bottom" constant="100" id="pde-9b-iBP"/>
+                            <constraint firstItem="2U1-4W-roj" firstAttribute="top" secondItem="P5T-uq-34j" secondAttribute="top" constant="70" id="eJ0-Yc-J0C"/>
+                            <constraint firstItem="8h3-vN-RFy" firstAttribute="top" secondItem="2U1-4W-roj" secondAttribute="bottom" constant="30" id="lax-EM-pTq"/>
+                            <constraint firstItem="2U1-4W-roj" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="s37-Ty-UFh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GhW-zI-hZP"/>
@@ -234,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xp-le-AI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587" y="771"/>
+            <point key="canvasLocation" x="1586.9565217391305" y="770.75892857142856"/>
         </scene>
     </scenes>
     <resources>

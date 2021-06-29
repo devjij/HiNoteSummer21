@@ -32,33 +32,106 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
+    
+    var reviewnum = 1
+    
+    @IBAction func didChangeSegment(  sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            reviewnum = 1
+        }
+        if sender.selectedSegmentIndex == 1 {
+            reviewnum = 2
+        }
+        if sender.selectedSegmentIndex == 2 {
+            reviewnum = 3
+        }
+        if sender.selectedSegmentIndex == 3 {
+            reviewnum = 4
+        }
+        if sender.selectedSegmentIndex == 4 {
+            reviewnum = 5
+        }
+        if sender.selectedSegmentIndex == 5 {
+            reviewnum = 6
+        }
+        if sender.selectedSegmentIndex == 6 {
+            reviewnum = 7
+        }
+        if sender.selectedSegmentIndex == 7 {
+            reviewnum = 8
+        }
+        if sender.selectedSegmentIndex == 8 {
+            reviewnum = 9
+        }
+        if sender.selectedSegmentIndex == 9 {
+            reviewnum = 10
+        }
+        
+    }
     
     @IBAction func enterTapped(_ sender: Any) {
         
         UserDefaults.standard.set(songName.text, forKey:
-                                  "songName")
+                                  "a" + String(reviewnum))
         UserDefaults.standard.set(artist.text, forKey:
-                                  "artist")
+                                    "b" + String(reviewnum))
         UserDefaults.standard.set(album.text, forKey:
-                                  "album")
+                                    "c" + String(reviewnum))
         UserDefaults.standard.set(review.text, forKey:
-                                  "review")
+                                    "d" + String(reviewnum))
         UserDefaults.standard.set(rating.text, forKey:
-                                  "rating")
+                                    "e" + String(reviewnum))
         
         
     }
     
+    var reviewdisplay = 1
+    
+    @IBAction func didChangeSegment2( sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            reviewdisplay = 1
+        }
+        if sender.selectedSegmentIndex == 1 {
+            reviewdisplay = 2
+        }
+        if sender.selectedSegmentIndex == 2 {
+            reviewdisplay = 3
+        }
+        if sender.selectedSegmentIndex == 3 {
+            reviewdisplay = 4
+        }
+        if sender.selectedSegmentIndex == 4 {
+            reviewdisplay = 5
+        }
+        if sender.selectedSegmentIndex == 5 {
+            reviewdisplay = 6
+        }
+        if sender.selectedSegmentIndex == 6 {
+            reviewdisplay = 7
+        }
+        if sender.selectedSegmentIndex == 7 {
+            reviewdisplay = 8
+        }
+        if sender.selectedSegmentIndex == 8 {
+            reviewdisplay = 9
+        }
+        if sender.selectedSegmentIndex == 9 {
+            reviewdisplay = 10
+        }
+        
+    }
+    
+    
+    
+    
     @IBAction func showReview(_ sender: Any) {
-        songNameView.text = UserDefaults.standard.object(forKey:
-        "songName") as? String
+        songNameView.text = UserDefaults.standard.object(forKey: "a" + String(reviewdisplay)) as? String
         
-        artistView.text = UserDefaults.standard.object(forKey: "artist") as? String
+        artistView.text = UserDefaults.standard.object(forKey: "b" + String(reviewdisplay)) as? String
         
-        albumView.text = UserDefaults.standard.object(forKey: "album") as? String
-        reviewView.text = UserDefaults.standard.object(forKey: "review") as? String
-        ratingView.text = UserDefaults.standard.object(forKey: "rating") as? String
+        albumView.text = UserDefaults.standard.object(forKey: "c" + String(reviewdisplay)) as? String
+        reviewView.text = UserDefaults.standard.object(forKey: "d" + String(reviewdisplay)) as? String
+        ratingView.text = UserDefaults.standard.object(forKey: "e" + String(reviewdisplay)) as? String
         
         
     }
@@ -67,10 +140,6 @@ class ViewController: UIViewController {
     
 
     
- //   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
- //       rating.resignFirstResponder()
-//    }
-
 }
 
 extension ViewController: UITextFieldDelegate {
