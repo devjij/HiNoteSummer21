@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>129422835127-e8rfpgjfs1gj5dq5s9noiguco4tqtslg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.129422835127-e8rfpgjfs1gj5dq5s9noiguco4tqtslg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYlYvoLCc7bT5cv2AKu-TViYlFJynjXzE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>129422835127</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.devjij.hinotesummer21</string>
+	<key>PROJECT_ID</key>
+	<string>hinote21-7d375</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hinote21-7d375.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:129422835127:ios:d0168e2bf102f6e29ebc32</string>
+</dict>
+</plist>

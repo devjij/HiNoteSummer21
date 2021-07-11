@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     var reviewnum = 1
     
     @IBAction func didChangeSegment(  sender: UISegmentedControl) {
