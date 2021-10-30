@@ -251,6 +251,13 @@
                                     <action selector="showReview:" destination="ob9-Kf-i0J" eventType="touchUpInside" id="p6B-FS-xFB"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset Label." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZh-Q0-yXa">
+                                <rect key="frame" x="180" y="612" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5T-uq-34j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -274,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xp-le-AI2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586.9565217391305" y="770.75892857142856"/>
+            <point key="canvasLocation" x="1569.5652173913045" y="775.44642857142856"/>
         </scene>
     </scenes>
     <resources>
