@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Home Page-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HiNoteSummer21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home Page" id="BYZ-38-t0r" customClass="ViewController" customModule="HiNoteSummer21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,11 +47,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8R-iY-uj4">
+                                <rect key="frame" x="315" y="138" width="44" height="30"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="taV-7E-5jl" kind="show" id="pus-Oe-GKI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YLp-6g-p5B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="CDn-aE-rhi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l8R-iY-uj4" secondAttribute="trailing" constant="55" id="ET2-Zk-BWe"/>
+                            <constraint firstItem="l8R-iY-uj4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="N1Y-ee-sn3"/>
                             <constraint firstItem="tYy-eN-BVJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OCe-ik-2Kl"/>
                             <constraint firstItem="YLp-6g-p5B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fTY-TK-wmj"/>
                             <constraint firstItem="tYy-eN-BVJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ygU-Id-biA"/>
@@ -81,7 +91,105 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-652"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
+        <scene sceneID="63C-KX-mY8">
+            <objects>
+                <viewController id="taV-7E-5jl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="otr-uq-e8A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-OZ-rqf">
+                                <rect key="frame" x="153" y="252.5" width="108.5" height="391.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-bk-Avb">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zju-dJ-kc3">
+                                        <rect key="frame" x="0.0" y="120.5" width="108.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Song:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igG-IT-09K">
+                                        <rect key="frame" x="0.0" y="241" width="108.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7w-tX-T03">
+                                        <rect key="frame" x="0.0" y="361.5" width="108.5" height="30"/>
+                                        <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
+                                        <state key="normal" title="Edit Profile"/>
+                                        <connections>
+                                            <segue destination="gmd-BQ-7Nc" kind="show" id="zSK-C0-O1A"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VSJ-g6-YBg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jgb-OZ-rqf" firstAttribute="centerX" secondItem="otr-uq-e8A" secondAttribute="centerX" id="25F-vv-YAi"/>
+                            <constraint firstItem="jgb-OZ-rqf" firstAttribute="centerY" secondItem="otr-uq-e8A" secondAttribute="centerY" id="dCf-FT-Efk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="zba-RV-ceu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7S-i3-wBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="75"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="wME-YQ-X1E">
+            <objects>
+                <viewController id="gmd-BQ-7Nc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bsp-FQ-1lJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="VnK-cz-fvc">
+                                <rect key="frame" x="107" y="297" width="200" height="512"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edit Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-NF-waY">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edit Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sP6-89-bR1">
+                                        <rect key="frame" x="0.0" y="134" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edit Favorite Song:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukx-0d-owy">
+                                        <rect key="frame" x="0.0" y="268" width="200" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-3t-kmQ">
+                                        <rect key="frame" x="0.0" y="402" width="200" height="110"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nXk-cF-Hkk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VnK-cz-fvc" firstAttribute="centerY" secondItem="Bsp-FQ-1lJ" secondAttribute="centerY" id="beK-aG-J0a"/>
+                            <constraint firstItem="VnK-cz-fvc" firstAttribute="centerX" secondItem="Bsp-FQ-1lJ" secondAttribute="centerX" id="mf9-pI-pJ2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="SRW-wE-gDB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kio-m0-xTo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3667" y="75"/>
+        </scene>
+        <!--Write Review-->
         <scene sceneID="Q9E-Fv-Iey">
             <objects>
                 <viewController id="AvW-dg-Yj5" customClass="ViewController" customModule="HiNoteSummer21" customModuleProvider="target" sceneMemberID="viewController">
@@ -165,7 +273,7 @@
                             <constraint firstItem="2pU-Bo-AN4" firstAttribute="leading" secondItem="g9Y-5j-xZ1" secondAttribute="leading" constant="40" id="zfU-ka-aq8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OeK-vN-48u"/>
+                    <navigationItem key="navigationItem" title="Write Review" id="OeK-vN-48u"/>
                     <connections>
                         <outlet property="album" destination="ZRR-lw-fip" id="fzG-yR-bDV"/>
                         <outlet property="artist" destination="fpm-wY-hPd" id="qOI-hg-OHJ"/>
@@ -179,7 +287,7 @@
             </objects>
             <point key="canvasLocation" x="467" y="761"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Review-->
         <scene sceneID="ubf-Sr-HyF">
             <objects>
                 <viewController id="ob9-Kf-i0J" customClass="ViewController" customModule="HiNoteSummer21" customModuleProvider="target" sceneMemberID="viewController">
@@ -270,7 +378,7 @@
                             <constraint firstItem="2U1-4W-roj" firstAttribute="centerX" secondItem="XWe-Gz-rI0" secondAttribute="centerX" id="s37-Ty-UFh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GhW-zI-hZP"/>
+                    <navigationItem key="navigationItem" title="Create Review" id="GhW-zI-hZP"/>
                     <connections>
                         <outlet property="albumView" destination="BDx-qa-ol7" id="910-ZJ-8EW"/>
                         <outlet property="artistView" destination="4HD-XS-zjt" id="Jp4-em-Gem"/>
