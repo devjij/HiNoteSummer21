@@ -152,8 +152,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="VnK-cz-fvc">
-                                <rect key="frame" x="107" y="297" width="200" height="642"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="VnK-cz-fvc">
+                                <rect key="frame" x="107" y="127" width="200" height="642"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edit Username:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-NF-waY">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -174,10 +174,13 @@
                                         <rect key="frame" x="0.0" y="402" width="200" height="30"/>
                                         <state key="normal" title="Save"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-3t-kmQ">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-3t-kmQ">
                                         <rect key="frame" x="0.0" y="532" width="200" height="110"/>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="642" id="HUj-xB-ty6"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nXk-cF-Hkk"/>
@@ -358,18 +361,13 @@
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h3-vN-RFy">
                                 <rect key="frame" x="161.5" y="228" width="91" height="30"/>
-                                <state key="normal" title="Show Review"/>
+                                <state key="normal" title="Show Review">
+                                    <color key="titleShadowColor" systemColor="quaternarySystemFillColor"/>
+                                </state>
                                 <connections>
                                     <action selector="showReview:" destination="ob9-Kf-i0J" eventType="touchUpInside" id="p6B-FS-xFB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset Label." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZh-Q0-yXa">
-                                <rect key="frame" x="180" y="612" width="94" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5T-uq-34j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
