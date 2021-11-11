@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A3DCE129D290E77B20FAB327 /* Pods_HiNoteSummer21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF77A3776E75EC55CB0E47F /* Pods_HiNoteSummer21.framework */; };
 		C1413DA8273C1D03003EC992 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = C1413DA7273C1D03003EC992 /* landmarkData.json */; };
-		C14CDC4B269B6F60001FEBB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C14CDC4A269B6F60001FEBB2 /* GoogleService-Info.plist */; };
 		C1E34531267FBB9C00CA373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E34530267FBB9B00CA373F /* AppDelegate.swift */; };
 		C1E34533267FBB9C00CA373F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E34532267FBB9C00CA373F /* SceneDelegate.swift */; };
 		C1E34535267FBB9C00CA373F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E34534267FBB9C00CA373F /* ViewController.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		C000332F878068E7FFCA51DE /* Pods-HiNoteSummer21.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiNoteSummer21.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiNoteSummer21/Pods-HiNoteSummer21.release.xcconfig"; sourceTree = "<group>"; };
 		C1413DA7273C1D03003EC992 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
-		C14CDC4A269B6F60001FEBB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1E3452D267FBB9B00CA373F /* HiNoteSummer21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiNoteSummer21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E34530267FBB9B00CA373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1E34532267FBB9C00CA373F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				C1E34530267FBB9B00CA373F /* AppDelegate.swift */,
 				C1E34532267FBB9C00CA373F /* SceneDelegate.swift */,
 				C1E34534267FBB9C00CA373F /* ViewController.swift */,
-				C14CDC4A269B6F60001FEBB2 /* GoogleService-Info.plist */,
 				C1E34536267FBB9C00CA373F /* Main.storyboard */,
 				C1E34539267FBBA500CA373F /* Assets.xcassets */,
 				C1E3453B267FBBA500CA373F /* LaunchScreen.storyboard */,
@@ -165,7 +162,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C14CDC4B269B6F60001FEBB2 /* GoogleService-Info.plist in Resources */,
 				C1E3453D267FBBA500CA373F /* LaunchScreen.storyboard in Resources */,
 				C1E3453A267FBBA500CA373F /* Assets.xcassets in Resources */,
 				C1413DA8273C1D03003EC992 /* landmarkData.json in Resources */,
