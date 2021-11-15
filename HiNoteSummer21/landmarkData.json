@@ -1,11 +1,12 @@
 [
     {
-        "title": "Turtle Rock",
-        "genre": "Rivers",
-        "artist": "Twentynine Palms",
-        "album": "California",
+        "title": "Rockstar Made",
+        "genre": "Trap",
+        "artist": "Playboi Carti",
+        "album": "Whole Lotta Red",
         "id": 1001,
         "isFeatured": true,
+        "rating": 10,
         "isFavorite": true,
         "park": "Joshua Tree National Park",
         "coordinates": {
