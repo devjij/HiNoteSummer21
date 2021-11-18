@@ -1,7 +1,7 @@
 [
     {
         "title": "Rockstar Made",
-        "genre": "Trap",
+        "genre": "Rap",
         "artist": "Playboi Carti",
         "album": "Whole Lotta Red",
         "id": 1001,
@@ -17,10 +17,10 @@
         "imageName": "turtlerock"
     },
     {
-        "title": "Silver Salmon Creek",
-        "genre": "Lakes",
-        "artist": "Port Alsworth",
-        "album": "Alaska",
+        "title": "Dark Fantasy",
+        "genre": "Rap",
+        "artist": "Kanye West",
+        "album": "My Beuatiful Dark Twisted Fantasy",
         "id": 1002,
         "isFeatured": false,
         "isFavorite": false,
@@ -29,7 +29,7 @@
             "longitude": -152.665167,
             "latitude": 59.980167
         },
-        "description": "Sample Review Description2",
+        "description": "Overall great song! I liked the drums, bass and melody! Would recommend.",
         "imageName": "silversalmoncreek"
     },
     {
