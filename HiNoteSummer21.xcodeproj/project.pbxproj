@@ -27,8 +27,6 @@
 		C1E34539267FBBA500CA373F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E3453C267FBBA500CA373F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E3453E267FBBA500CA373F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1ED3CE9273734B7003DBBE8 /* HiNoteSummer21-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HiNoteSummer21-Bridging-Header.h"; sourceTree = "<group>"; };
-		C1ED3CEB273734B7003DBBE8 /* Sample Review Info.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Sample Review Info.hpp"; sourceTree = "<group>"; };
 		FE83A3DC5A3DD08B7416D59C /* Pods-HiNoteSummer21.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiNoteSummer21.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiNoteSummer21/Pods-HiNoteSummer21.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +86,6 @@
 				C1E3453B267FBBA500CA373F /* LaunchScreen.storyboard */,
 				C1E3453E267FBBA500CA373F /* Info.plist */,
 				C1413DA7273C1D03003EC992 /* landmarkData.json */,
-				C1ED3CEB273734B7003DBBE8 /* Sample Review Info.hpp */,
-				C1ED3CE9273734B7003DBBE8 /* HiNoteSummer21-Bridging-Header.h */,
 			);
 			path = HiNoteSummer21;
 			sourceTree = "<group>";
