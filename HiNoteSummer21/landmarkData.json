@@ -33,10 +33,10 @@
         "imageName": "silversalmoncreek"
     },
     {
-        "title": "Chilkoot Trail",
-        "genre": "Mountains",
-        "artist": "Skagway",
-        "album": "Alaska",
+        "title": "St. Matthew Passion",
+        "genre": "Classical",
+        "artist": "Johann Sebastian Bach",
+        "album": "Bach Greatest Hits",
         "id": 1003,
         "isFeatured": false,
         "isFavorite": true,
