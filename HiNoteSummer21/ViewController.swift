@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-songName.delegate = self
-  artist.delegate = self
-  album.delegate = self
-     review.delegate = self
-    rating.delegate = self
+        songName.delegate = self
+        artist.delegate = self
+        album.delegate = self
+        review.delegate = self
+        rating.delegate = self
         
         
         // Do any additional setup after loading the view.
