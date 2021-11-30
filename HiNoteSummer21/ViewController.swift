@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         rating.delegate = self
         
         
+        //delegate setup
+        
         // Do any additional setup after loading the view.
     }
     
@@ -137,9 +139,6 @@ class ViewController: UIViewController {
         
     }
  
-    
-    
-
     
 }
 
