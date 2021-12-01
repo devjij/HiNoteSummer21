@@ -104,6 +104,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj5-bk-Avb">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="ah1-4C-QQg"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -139,10 +142,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="zba-RV-ceu"/>
+                    <connections>
+                        <outlet property="view" destination="jgb-OZ-rqf" id="m0N-Nl-UBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r7S-i3-wBO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2467" y="75"/>
+            <point key="canvasLocation" x="2838" y="75"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="wME-YQ-X1E">

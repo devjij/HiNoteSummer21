@@ -7,8 +7,16 @@
 
 import UIKit
 
+
+
+
+
 class ViewController: UIViewController {
 
+  
+    @interface UILabel : UIView
+
+    
     @IBOutlet weak var songName: UITextField!
     @IBOutlet weak var artist: UITextField!
     @IBOutlet weak var album: UITextField!
@@ -19,6 +27,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var albumView: UILabel!
     @IBOutlet weak var reviewView: UILabel!
     @IBOutlet weak var ratingView: UILabel!
+    
+    @IBOutlet weak var
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
