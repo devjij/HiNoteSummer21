@@ -31,20 +31,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        songName.delegate = self
-        artist.delegate = self
-        album.delegate = self
-        review.delegate = self
-        rating.delegate = self
-        
-        
-        //delegate setup
-        
-        // Do any additional setup after loading the view.
-    }
+    
+    
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            songName.delegate = self
+            artist.delegate = self
+            album.delegate = self
+            review.delegate = self
+            rating.delegate = self
+            
+            
+            //delegate setup
+            
+            // Do any additional setup after loading the view.
+        }
+    
     
     
     var reviewnum = 1
@@ -83,6 +86,8 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func enterTapped(_ sender: Any) {
         
         UserDefaults.standard.set(songName.text, forKey:
@@ -99,7 +104,8 @@ class ViewController: UIViewController {
         
     }
     
-    var reviewdisplay = 1
+    
+        var reviewdisplay = 1
     
     @IBAction func didChangeSegment2( sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -135,9 +141,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
     @IBAction func showReview(_ sender: Any) {
         songNameView.text = UserDefaults.standard.object(forKey: "a" + String(reviewdisplay)) as? String
         
@@ -146,19 +149,13 @@ class ViewController: UIViewController {
         albumView.text = UserDefaults.standard.object(forKey: "c" + String(reviewdisplay)) as? String
         reviewView.text = UserDefaults.standard.object(forKey: "d" + String(reviewdisplay)) as? String
         ratingView.text = UserDefaults.standard.object(forKey: "e" + String(reviewdisplay)) as? String
-        
-        
+        }
     }
- 
-    
-}
-
-extension ViewController: UITextFieldDelegate {
-    
+extension ViewController: UITextFieldDelegate
+        {
     func textFieldShouldReturn( _ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true
- 
+        }
     }
-}
 
