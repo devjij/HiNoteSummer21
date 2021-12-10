@@ -16,16 +16,17 @@ class ViewController: UIViewController {
   
     @interface UILabel : UIView
 
+    @IBOutlet weak var album: UITextField!
+    @IBOutlet weak var review: UITextField!
+    @IBOutlet weak var rating: UITextField!
+    @IBOutlet weak var songNameView: UILabel!
     @IBOutlet weak var artistView: UILabel!
     @IBOutlet weak var albumView: UILabel!
     @IBOutlet weak var reviewView: UILabel!
     @IBOutlet weak var ratingView: UILabel!
     @IBOutlet weak var songName: UITextField!
     @IBOutlet weak var artist: UITextField!
-    @IBOutlet weak var album: UITextField!
-    @IBOutlet weak var review: UITextField!
-    @IBOutlet weak var rating: UITextField!
-    @IBOutlet weak var songNameView: UILabel!
+
 
     
     @IBOutlet weak var
